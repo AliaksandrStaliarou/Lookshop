@@ -1,0 +1,360 @@
+
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80.83333%;
+}
+
+.container-info {
+    background: #000000;
+    color: white;
+    font-size: 0.6875em;
+}
+
+.customInfo {
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template-columns: auto 72px 126px 34px;
+    grid-template-rows: 30px;
+}
+
+
+.customInfo {
+    text-transform: uppercase;
+}
+
+.customCare p {
+    font-family: arial, sans-serif;
+    font-size: 0.6875rem;
+}
+
+.customCare span {
+    font-family: arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+.moneySelection {
+    height: 30px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 0 2px;
+    text-align: center;
+}
+
+.moneySelection select {
+    padding: 0 5px 0 5px;
+    height: 28px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 0.9875em;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.moneySelection select:focus {
+    outline: none;
+}
+
+.myAccount {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.myAccount a {
+    text-decoration: none;
+    color: white;
+}
+
+.myAccount a:hover {
+    color: #fd926d;
+}
+
+.myAccount p {
+
+}
+
+.myAccount i {
+    font-size: 15px;
+    color: #666666;
+}
+
+
+
+
+.searchBlock {
+    height: 30px;
+    line-height: 30px;
+    /*padding: 20% 0;*/
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.searchBlock .fa.fa-search {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.searchBlock i {
+    padding: 0 6px;
+}
+
+.searchBlock input {
+    height: 29px;
+    width: 197px;
+    margin-left: -201px;
+    outline: none;
+    border: none;
+    display: none;
+    background: #444444;
+    color: white;
+}
+
+.searchBlock .open {
+    display: inline-block;
+}
+
+
+
+/*************************/
+/*navigation*/
+/*************************/
+
+.navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1.9% auto 1.2% auto;
+}
+
+.logo {
+    padding-top: 0.5%;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+.menu > ul li {
+    position: relative;
+}
+
+.menu li ul {
+    position: absolute;
+    width: 150px;
+    background: white;
+    -webkit-transition: top 1s ease-out 0.5s;
+    transition: top 1s ease-out 0.5s;
+}
+
+
+.menu > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/*.menu > ul > li {
+    display: inline-block;
+}*/
+
+
+
+.menu > ul li a {
+    padding: 10px 15.7px;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    white-space: nowrap;
+}
+
+.menu i {
+    font-size: 0.75em;
+}
+
+.menu > ul > li a:hover {
+    background: #fd926d;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.menu > ul > li > a:hover {
+    color: white;
+}
+
+.menu li ul a {
+    border-top: 1px  solid #e8ebf1;
+    border-left: 1px  solid #e8ebf1;
+    border-right: 1px  solid #e8ebf1;
+    display: none;
+}
+
+.menu li:hover ul a,
+.menu li:hover ul li:last-child:after {
+    display: block;
+}
+
+.menu li ul li:last-child:after {
+     content: "";
+     position: absolute;
+     height: 5px;
+     right: 1px;
+     width: 148px;
+     background: #fd926d;
+     display: none;
+}
+
+
+
+
+.shoppingCart {
+    margin-left: 10px;
+    width: 30%; /********************/
+}
+
+.shoppingCart li {
+   /* width: 213px;*/
+    height: 32px;
+    /*line-height: 32px;*/
+    /*display: block;*/
+}
+
+.shoppingCart li:first-child {
+    border: 1px solid #d6d6d6;
+}
+
+.shoppingCart li:last-child {
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.shoppingCart li:first-child a span,
+.shoppingCart i {
+    font-size: 0.75em;
+}
+
+.shoppingCart li:last-child a span {
+    font-size: 0.6875em;
+}
+
+.shoppingCart i {
+    color: #c1c1c1;
+}
+
+.shoppingCart a {
+    color: #949393;
+   /* display: block;*/
+    padding: 0 4%;
+}
+
+.shoppingCart li:first-child  {
+    position: relative;
+}
+
+.shoppingCart li:first-child a {
+    position: absolute;
+    top: 20%;
+}
+
+.shoppingCart li:first-child span {
+   /* padding-right: 134px;*/
+    padding-right: 50%;
+}
+
+.shoppingCart img {
+    padding-right: 95px;
+    vertical-align: middle;
+}
+
+.shoppingCart li:last-child span {
+    text-transform: uppercase;
+}
+
+.shoppingCart span {
+
+}
+
+
+
+
+
+
+/*
+
+
+.customInfo {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.customCare {
+    display: flex;
+    align-items: center;
+}
+
+.accountInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    height: 100%;
+}
+
+.accountInfo div {
+    border-left: 1px solid red;
+}
+
+.accountInfo i {
+    font-size: 12px;
+    color: #666666;
+}
+
+.myAccount {
+    height: 50px;
+    line-height: 50px;
+}*/

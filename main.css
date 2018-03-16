@@ -1,0 +1,811 @@
+
+
+@font-face {
+    font-family: LuxuryRoyaleJF;
+    src: url(font/LuxuryRoyaleJF.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeueLTStd-LtCn;
+    src: url(font/HelveticaNeueLTStd-LtCn.otf);
+}
+
+@font-face {
+    font-family:HelveticaNeueLTStd-Th;
+    src: url(font/HelveticaNeueLTStd-Th.otf);
+}
+
+/*@font-face {
+    font-family: HelveticaNeueLTStd-LtCn;
+    src: url(font/HelveticaNeueLTStd-LtCn.otf);
+}*/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80.83333%;
+}
+
+.container-info {
+    background: #000000;
+    color: white;
+    font-size: 0.6875em;
+}
+
+.customInfo {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 72px 126px 34px;
+    grid-template-rows: 30px;
+}
+
+.customInfo {
+    text-transform: uppercase;
+}
+
+.customCare p {
+    font-family: arial, sans-serif;
+    font-size: 0.6875rem;
+}
+
+.customCare span {
+    font-family: arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+.moneySelection {
+    height: 30px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 0 2px;
+    text-align: center;
+}
+
+.moneySelection select {
+    padding: 0 5px 0 5px;
+    height: 28px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 0.9875em;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.moneySelection select:focus {
+    outline: none;
+}
+
+.myAccount {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.myAccount a {
+    text-decoration: none;
+    color: white;
+}
+
+.myAccount a:hover {
+    color: #fd926d;
+}
+
+.myAccount p {
+
+}
+
+.myAccount i {
+    font-size: 15px;
+    color: #666666;
+}
+
+
+.searchBlock {
+    height: 30px;
+    line-height: 30px;
+    /*padding: 20% 0;*/
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.searchBlock .fa.fa-search {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.searchBlock i {
+    padding: 0 6px;
+}
+
+.searchBlock input {
+    height: 29px;
+    width: 197px;
+    margin-left: -201px;
+    outline: none;
+    border: none;
+    display: none;
+    background: #444444;
+    color: white;
+}
+
+.searchBlock .open {
+    display: inline-block;
+}
+
+
+
+/*************************/
+/*navigation*/
+/*************************/
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.9% auto 1.6% auto;
+}
+
+.logo {
+    padding-top: 0.5%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+.menu > ul li {
+    position: relative;
+}
+
+.menu li ul {
+    position: absolute;
+    width: 150px;
+    background: white;
+    transition: top 1s ease-out 0.5s;
+}
+
+
+.menu > ul {
+    display: flex;
+}
+
+
+/*.menu > ul > li {
+    display: inline-block;
+}*/
+
+
+
+.menu > ul li a {
+    padding: 10px 15.7px;
+    display: block;
+    transition: all 0.3s ease-out;
+    white-space: nowrap;
+}
+
+.menu i {
+    font-size: 0.75em;
+}
+
+.menu > ul > li a:hover {
+    background: #fd926d;
+    transition: all 0.3s ease-out;
+}
+
+.menu > ul > li > a:hover {
+    color: white;
+}
+
+.menu li ul a {
+    border-top: 1px  solid #e8ebf1;
+    border-left: 1px  solid #e8ebf1;
+    border-right: 1px  solid #e8ebf1;
+    display: none;
+}
+
+.menu li:hover ul a,
+.menu li:hover ul li:last-child:after {
+    display: block;
+}
+
+.menu li ul li:last-child:after {
+     content: "";
+     position: absolute;
+     height: 5px;
+     right: 1px;
+     width: 148px;
+     background: #fd926d;
+     display: none;
+}
+
+.overlay > a {
+    display: none;
+}
+
+
+
+.shoppingCart {
+    margin-left: 10px;
+}
+
+.shoppingCart li:first-child,
+.shoppingCart li:last-child {
+    width: 213px;
+    height: 32px;
+    /*line-height: 32px;*/
+    /*display: block;*/
+}
+
+.shoppingCart li:last-child {
+    line-height: 32px;
+}
+
+
+
+.shoppingCart li:first-child {
+    border: 1px solid #d6d6d6;
+}
+
+.shoppingCart li:last-child {
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.shoppingCart li:first-child a span,
+.shoppingCart i {
+    font-size: 0.75em;
+}
+
+.shoppingCart li:last-child a span {
+    font-size: 0.6875em;
+}
+
+.shoppingCart i {
+    color: #c1c1c1;
+}
+
+.shoppingCart a {
+    color: #949393;
+    display: block;
+    padding: 0 4%;
+}
+
+.shoppingCart li a:hover {
+    color: #fd7140;
+}
+
+.shoppingCart li:first-child  {
+    position: relative;
+}
+
+.shoppingCart li:first-child a {
+    position: absolute;
+    top: 19%;
+    display: block;
+}
+
+.shoppingCart li:first-child span {
+    padding-right: 134px;
+}
+
+.shoppingCart img {
+    padding-right: 95px;
+    vertical-align: middle;
+}
+
+.shoppingCart li:last-child span {
+    text-transform: uppercase;
+}
+
+.menu760 {
+    display: none;
+    /*justify-content: space-between;*/
+    position: relative;
+    margin: 1.9% auto 0 auto;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background: #fd926d;
+    cursor: pointer;
+
+}
+
+.menu760 p {
+    /*align-self: center;*/
+    padding: 0 10px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.125em;
+    text-transform: uppercase;
+
+}
+
+.menu760 i {
+    /*align-self: center;*/
+   /* position: absolute;
+    right: 0;*/
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+
+
+
+@media all and (max-width: 1018px) {
+    .menu > ul li a {
+        padding: 10px 10px;
+    }
+
+    .menu li ul {
+        width: 130px;
+    }
+
+    .menu li ul li:last-child:after {
+        width: 128px;
+    }
+
+    .shoppingCart {
+        margin-left: 5px;
+    }
+
+    .shoppingCart li:first-child,
+    .shoppingCart li:last-child {
+        width: 163px;
+    }
+
+    .shoppingCart li:first-child span {
+        padding-right: 84px;
+    }
+
+    .shoppingCart img {
+        padding-right: 45px;
+    }
+}
+
+@media all and (max-width: 880px) {
+    .menu > ul li a {
+        padding: 10px 5px;
+    }
+
+    .menu li ul {
+        width: 120px;
+    }
+
+    .menu li ul li:last-child:after {
+        width: 118px;
+    }
+
+    .shoppingCart li:first-child,
+    .shoppingCart li:last-child {
+        width: 113px;
+    }
+
+    .shoppingCart li:first-child span {
+        padding-right: 44px;
+    }
+
+    .shoppingCart img {
+        padding-right: 5px;
+    }
+
+    .shoppingCart a {
+        padding: 0 2%;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .container {
+        width: 96.052631578%;
+    }
+
+    .menu > ul {
+       /* display: block;*/
+        /*width: 0;*/
+    }
+
+    .shoppingCart li:first-child,
+    .shoppingCart li:last-child {
+        width: 213px;
+    }
+
+    .shoppingCart li:first-child span {
+        padding-right: 134px;
+    }
+
+    .shoppingCart img {
+        padding-right: 95px;
+    }
+
+    .menu760 {
+        display: flex;
+    }
+
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+       /* overflow-y: hidden;*/
+        transition: 0.5s;
+    }
+
+    .overlay > li {
+       /* position: relative;*/
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        color: #818181;
+
+    }
+
+    .menu > ul {
+        display: block;
+    }
+
+    .overlay > a {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        cursor: pointer;
+    }
+
+    .overlay > a:hover {
+        color: white;
+    }
+
+
+
+    .menu > ul > li a:hover {
+        background: none;
+    }
+
+
+
+    .menu li ul {
+        position: static;
+        width: 100%;
+        background: #3c3c3c;
+        display: none;
+    }
+
+
+    .menu > ul li {
+        display: inline-block;
+    }
+
+    .menu li ul a {
+        border: none;
+        padding: 30px 20px;
+        color: white;
+    }
+
+    .menu li:hover ul li:last-child:after {
+        display: none;
+    }
+
+    .menu li ul li a {
+        display: block;
+    }
+
+    .menu li:hover ul {
+        /*display: none;*/
+    }
+
+
+}
+
+
+
+
+@media all and (max-width: 640px) {
+    .container {
+        width: 95.3125%;
+    }
+
+    .customInfo {
+        width: 100%;
+    }
+
+    .customInfo {
+        display: block;
+    }
+
+    .customCare {
+        width: 100%;
+        background: white;
+    }
+
+    .customCare p {
+        color: #838383;
+        padding: 5.4% 0;
+        text-align: center;
+        font-size: 1.875rem;
+    }
+
+    .customCare p span {
+        font-size: 1.875rem;
+    }
+
+
+    .moneySelection,
+    .myAccount,
+    .searchBlock {
+        display: inline-block;
+    }
+
+    .moneySelection {
+        width: 23.90625%;
+    }
+
+    .myAccount {
+        width: 59.84375%;
+        text-align: center;
+    }
+
+    .myAccount a {
+        align-items: center;
+    }
+
+    .myAccount p {
+        display: inline;
+    }
+
+    .searchBlock {
+        width: 14%;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .shoppingCart {
+        width: 100%;
+    }
+
+    .shoppingCart ul li:first-child {
+        display: none;
+    }
+
+    .shoppingCart li:last-child {
+        margin: 1% 0;
+        width: 100%;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .shoppingCart li:last-child span {
+        float: right;
+    }
+
+
+
+
+    .logo img {
+        display: none;
+    }
+
+    .logo a {
+        display: block;
+        background: url(img/bigLogo.png) no-repeat center;
+        background-size: 55%;
+        padding: 7% 14%;
+    }
+
+    .logo {
+
+    }
+
+}
+
+
+
+/*********************/
+/*Carousel*/
+/*********************/
+
+.banner {
+    max-width: 100%;
+    height: auto;
+}
+
+.owl-item {
+    position: relative;
+}
+
+.item1 p {
+    position: absolute;
+    top: 9.2%;
+    left: 26.2%;
+    font-family: LuxuryRoyaleJF, sans-serif;
+    font-size: 2.75vw;
+    color: #78645d;
+}
+
+.item1 h3 {
+    position: absolute;
+    top:  57.6%;
+    left: 18.5%;
+    font-family: HelveticaNeueLTStd-LtCn, Helvetica, sans-serif;
+    font-size: 2.75vw;
+    color: #78645d;
+    text-transform: uppercase;
+}
+
+hr {
+    margin: 0;
+}
+
+.item1 hr:nth-child(1),
+.item1 hr:nth-child(2) {
+    position: absolute;
+    height: 1px;
+    width: 6.166666666666667%;
+    background-color: #78645d;
+    border: none;
+}
+
+hr:nth-child(1) {
+    top: 14.6%;
+    left: 19.5%;
+}
+
+hr:nth-child(2) {
+    top: 14.6%;
+    left: 33.6%;
+}
+
+.item1 hr:nth-child(5) {
+    position: absolute;
+    top: 54%;
+    left: 15.2%;
+    height: 4px;
+    width: 28.41666666666667%;
+    background-color: #78645d;
+    border: none;
+}
+
+.item1 hr:nth-child(6) {
+    position: absolute;
+    top: 55.6%;
+    left: 15.2%;
+    height: 1px;
+    width: 28.16666666667%;
+    background-color: #78645d;
+    border: none;
+}
+
+.item1 a {
+    position: absolute;
+    top: 68.4%;
+    left: 22.8%;
+    display: block;
+    padding: 1.64% 4% 1.64% 2%;
+    background: #fd926d;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: HelveticaNeueLTStd-Th, Helvetica, sans-serif;
+    font-size: 1.25vw;
+}
+
+.item1 a i {
+    position: absolute;
+    top: 39%;
+    left: 82%;
+    font-size: 0.6875em;
+    padding-bottom: 2%;
+}
+
+.item1 a:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    right: 1px;
+    background: #dd6b44;
+    /*display: none;*/
+}
+
+.item1 a:hover {
+    background: #dd6b44;
+    /*comment*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+.customInfo {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.customCare {
+    display: flex;
+    align-items: center;
+}
+
+.accountInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    height: 100%;
+}
+
+.accountInfo div {
+    border-left: 1px solid red;
+}
+
+.accountInfo i {
+    font-size: 12px;
+    color: #666666;
+}
+
+.myAccount {
+    height: 50px;
+    line-height: 50px;
+}*/
