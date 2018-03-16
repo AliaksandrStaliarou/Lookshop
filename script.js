@@ -3,9 +3,17 @@
  */
 
 
+
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-
+        items: 1,
+        loop: true,
+        responsiveClass:true,
+        nav: true,
+        navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+                  '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        pagination : true
     });
 });
 
