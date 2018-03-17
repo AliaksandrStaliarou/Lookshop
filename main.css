@@ -225,8 +225,7 @@ body {
 
 .menu li ul a {
     border-top: 1px  solid #e8ebf1;
-    border-left: 1px  solid #e8ebf1;
-    border-right: 1px  solid #e8ebf1;
+
     display: none;
 }
 
@@ -239,8 +238,7 @@ body {
      content: "";
      position: absolute;
      height: 5px;
-     right: 1px;
-     width: 148px;
+     width: 150px;
      background: #fd926d;
      display: none;
 }
@@ -248,8 +246,6 @@ body {
 .overlay > a {
     display: none;
 }
-
-
 
 .shoppingCart {
     margin-left: 10px;
@@ -259,15 +255,11 @@ body {
 .shoppingCart li:last-child {
     width: 213px;
     height: 32px;
-    /*line-height: 32px;*/
-    /*display: block;*/
 }
 
 .shoppingCart li:last-child {
     line-height: 32px;
 }
-
-
 
 .shoppingCart li:first-child {
     border: 1px solid #d6d6d6;
@@ -673,11 +665,12 @@ body {
 .item1 h3 {
     position: absolute;
     top:  57.6%;
-    left: 18.5%;
+    left: 18.2%;
     font-family: HelveticaNeueLTStd-LtCn, Helvetica, sans-serif;
     font-size: 2.75vw;
     color: #78645d;
     text-transform: uppercase;
+    letter-spacing: 0.01em;
 }
 
 hr {
@@ -725,10 +718,10 @@ hr:nth-child(2) {
 
 .item1 a {
     position: absolute;
-    top: 68.4%;
+    top: 68.8%;
     left: 22.8%;
     display: block;
-    padding: 1.64% 4% 1.64% 2%;
+    padding: 1.70% 4.1% 1.50% 2%;
     background: #fd926d;
     color: white;
     text-decoration: none;
@@ -739,7 +732,7 @@ hr:nth-child(2) {
 
 .item1 a i {
     position: absolute;
-    top: 39%;
+    top: 38.2%;
     left: 82%;
     font-size: 0.6875em;
     padding-bottom: 2%;
@@ -768,8 +761,31 @@ hr:nth-child(2) {
 
 .owl-prev, .owl-next {
     position: absolute;
-    top: 50%;
+    top: 33.4%;
+    font-size: 2vw;
    /* margin-top: -10px;*/
+}
+
+.fa.fa-chevron-left,
+.fa.fa-chevron-right {
+    font-size: 1.625vw;
+    color: #cbcbca
+}
+
+.owl-prev,
+.owl-next {
+    padding: 4.1% 0.6% !important;
+    background: #fefefd !important;
+}
+
+.owl-prev:focus,
+.owl-next:focus {
+    outline: none;
+}
+
+.owl-prev:hover .fa.fa-chevron-left,
+.owl-next:hover .fa.fa-chevron-right {
+    color: #fd926d;
 }
 
 .owl-prev {
@@ -780,15 +796,33 @@ hr:nth-child(2) {
     right: 0;
 }
 
+.owl-dots {
+    margin: 2.4% 0;
+    text-align: center;
+}
+
 .owl-carousel button.owl-dot {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: red;
-    margin: 0 5px;
+    background: #867a76;
+    margin: 0 0.84%;
     border-radius: 50%;
-
 }
+
+.owl-carousel button.owl-dot {
+    outline: none;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: #fd926d;
+}
+
+
+
+/*****************/
+/*E-mail section*/
+/*****************/
 
 
 
