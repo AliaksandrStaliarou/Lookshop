@@ -824,6 +824,86 @@ hr:nth-child(2) {
 /*E-mail section*/
 /*****************/
 
+.emailSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ededed;
+}
+
+.emailContainer {
+    padding: 1.2% 0;
+}
+
+.emailContainer label {
+    font-size: 0.75em;
+    font-family: Arial, sans-serif;
+    color: #6b6b6b;
+}
+
+.emailContainer input[type="email"] {
+    margin-left: 0.5%;
+   /* padding: 0.7% 0.2%;*/
+    padding: 7px 7px;
+    width: 132px;
+    border: none;
+    outline: none;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    font-size: 0.75em;
+    color: #9f9f9f;
+}
+
+.emailContainer button {
+    /*padding: 8px 9px;*/
+    padding: 0;
+    background: #fd926d;
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid #dd6b44;
+    border-left: none;
+    cursor: pointer;
+}
+
+.emailContainer button:hover {
+    background: #4fafa0;
+    border-bottom: 3px solid #0E8673;
+}
+
+.emailContainer button i {
+    padding: 7px 9px 6px 9px;
+    font-size: 1em;
+    color: white;
+}
+
+.socialIcons p {
+    display: inline-block;
+}
+
+.icon-facebook {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+.emailContainer input[type="email"]::-webkit-input-placeholder,
+.emailContainer input[type="email"]:-ms-input-placeholder,
+.emailContainer input[type="email"]::-ms-input-placeholder,
+.emailContainer input[type="email"]::placeholder {
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    color: #9f9f9f;
+}
+
+
+
+
 
 
 

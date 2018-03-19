@@ -161,7 +161,26 @@
         <img src="img/banner-5.jpg" alt="" class="banner"/>
     </div>
 </section>
-<section>social section email</section>
+<section class="emailSection">
+    <div class="container emailContainer">
+        <form action="#" method="post">
+            <label for="user-email">Stay updated</label>
+            <input type="email" id="user-email" value="Your email address" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = 'Your email address';}" required/><!--
+            --><button type="submit">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        </form>
+    </div>
+    <div class="socialIcons">
+        <p>Find us here</p>
+        <i class="icon-facebook"></i>
+        <i class="icon-twitter"></i>
+        <i class="icon-pinterest-circled"></i>
+    </div>
+    
+
+</section>
 <section>section photos</section>
 <section>section gallery</section>
 <section>section clearance</section>
