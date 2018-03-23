@@ -106,15 +106,10 @@ body {
     color: #fd926d;
 }
 
-.myAccount p {
-
-}
-
 .myAccount i {
     font-size: 15px;
     color: #666666;
 }
-
 
 .searchBlock {
     height: 30px;
@@ -191,17 +186,9 @@ body {
     transition: top 1s ease-out 0.5s;
 }
 
-
 .menu > ul {
     display: flex;
 }
-
-
-/*.menu > ul > li {
-    display: inline-block;
-}*/
-
-
 
 .menu > ul li a {
     padding: 10px 15.7px;
@@ -319,7 +306,6 @@ body {
 
 .menu760 {
     display: none;
-    /*justify-content: space-between;*/
     position: relative;
     margin: 1.9% auto 0 auto;
     width: 100%;
@@ -327,11 +313,9 @@ body {
     line-height: 48px;
     background: #fd926d;
     cursor: pointer;
-
 }
 
 .menu760 p {
-    /*align-self: center;*/
     padding: 0 10px;
     width: 100%;
     color: white;
@@ -423,11 +407,6 @@ body {
         width: 96.052631578%;
     }
 
-    .menu > ul {
-       /* display: block;*/
-        /*width: 0;*/
-    }
-
     .shoppingCart li:first-child,
     .shoppingCart li:last-child {
         width: 213px;
@@ -490,13 +469,9 @@ body {
         color: white;
     }
 
-
-
     .menu > ul > li a:hover {
         background: none;
     }
-
-
 
     .menu li ul {
         position: static;
@@ -504,7 +479,6 @@ body {
         background: #3c3c3c;
         display: none;
     }
-
 
     .menu > ul li {
         display: inline-block;
@@ -523,11 +497,6 @@ body {
     .menu li ul li a {
         display: block;
     }
-
-    .menu li:hover ul {
-        /*display: none;*/
-    }
-
 
 }
 
@@ -562,7 +531,6 @@ body {
     .customCare p span {
         font-size: 1.875rem;
     }
-
 
     .moneySelection,
     .myAccount,
@@ -618,9 +586,6 @@ body {
         float: right;
     }
 
-
-
-
     .logo img {
         display: none;
     }
@@ -630,10 +595,6 @@ body {
         background: url(img/bigLogo.png) no-repeat center;
         background-size: 55%;
         padding: 7% 14%;
-    }
-
-    .logo {
-
     }
 
 }
@@ -763,7 +724,6 @@ hr:nth-child(2) {
     position: absolute;
     top: 33.4%;
     font-size: 2vw;
-   /* margin-top: -10px;*/
 }
 
 .fa.fa-chevron-left,
@@ -797,7 +757,7 @@ hr:nth-child(2) {
 }
 
 .owl-dots {
-    margin: 2.4% 0;
+    margin: 2.4% 0 2.5% 0;
     text-align: center;
 }
 
@@ -825,25 +785,31 @@ hr:nth-child(2) {
 /*****************/
 
 .emailSection {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background: #ededed;
 }
 
-.emailContainer {
-    padding: 1.2% 0;
+.emailFlex {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    flex-wrap: nowrap;
+    height: 55px;
 }
 
-.emailContainer label {
+.stayUpdatedContainer {
+    /*padding: 1.5%  0 1.3% 0;*/
+    line-height: 55px;
+    flex-basis: 240px;
+}
+
+.stayUpdatedContainer label {
     font-size: 0.75em;
     font-family: Arial, sans-serif;
     color: #6b6b6b;
 }
 
-.emailContainer input[type="email"] {
-    margin-left: 0.5%;
-   /* padding: 0.7% 0.2%;*/
+.stayUpdatedContainer input[type="email"] {
+    margin-left: 1.8%;
     padding: 7px 7px;
     width: 132px;
     border: none;
@@ -854,8 +820,7 @@ hr:nth-child(2) {
     color: #9f9f9f;
 }
 
-.emailContainer button {
-    /*padding: 8px 9px;*/
+.stayUpdatedContainer button {
     padding: 0;
     background: #fd926d;
     border-top: none;
@@ -865,25 +830,116 @@ hr:nth-child(2) {
     cursor: pointer;
 }
 
-.emailContainer button:hover {
+.stayUpdatedContainer button:hover {
     background: #4fafa0;
     border-bottom: 3px solid #0E8673;
 }
 
-.emailContainer button i {
-    padding: 7px 9px 6px 9px;
+.stayUpdatedContainer button i {
+    padding: 7px 9px 6px 8px;
     font-size: 1em;
     color: white;
 }
 
-.socialIcons p {
-    display: inline-block;
+.findUsContainer {
+    line-height: 55px;
+    flex-basis: 245px;
 }
 
-.icon-facebook {
+.findUsContainer p {
+   /* align-self: flex-start;*/
+    position: relative;
+    top: -4px;
+    margin-right: 3%;
+    display: inline-block;
+    font-size: 0.75em;
+    font-family: Arial, sans-serif;
+    color: #6b6b6b;
+}
+
+.findUsContainer i {
+    color: #6b6b6b;
+}
+
+.findUsContainer a:nth-child(2) {
+    /*padding: 7.2% 0 7.3% 0;*/
+    position: relative;
+    top: -2px;
+    font-size: 1.25em;
+}
+
+.findUsContainer a:nth-child(3) {
+    /*padding: 6% 0;*/
+    font-size: 1.4375em;
+}
+
+.findUsContainer a:nth-child(3) i {
+    position: relative;
+    left: 2px;
+}
+
+.findUsContainer a:nth-child(4) {
+    /*padding: 5.9% 0 6.9% 0;*/
     font-size: 1.5em;
 }
 
+.findUsContainer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 54px;
+    text-align: center;
+}
+
+.findUsContainer a:nth-child(2),
+.findUsContainer a:last-child {
+    background: #f7f7f7;
+}
+
+.findUsContainer a:visited {
+    color: #6b6b6b;
+}
+
+.findUsContainer a:hover i {
+    color: #a19d9d;
+}
+
+
+/*************************/
+/*LAYERS SECTION*/
+/*************************/
+
+.layersSection {
+    margin-top: 3.35%;
+}
+
+.layerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layerItem1 {
+    width: 50%;
+   /* margin-right: 0.05%;*/
+}
+
+.layerItem2 {
+    width: 50%;
+   /* margin-left: 0.05%;*/
+}
+
+.subLayerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layer {
+    max-width: 100%;
+    height: auto;
+}
+
+.ferrisWheel {
+    margin-right: 0.5%;
+}
 
 
 
@@ -892,6 +948,12 @@ hr:nth-child(2) {
 
 
 
+
+
+
+
+
+/*
 .emailContainer input[type="email"]::-webkit-input-placeholder,
 .emailContainer input[type="email"]:-ms-input-placeholder,
 .emailContainer input[type="email"]::-ms-input-placeholder,
@@ -900,17 +962,7 @@ hr:nth-child(2) {
     font-family: Arial, sans-serif;
     color: #9f9f9f;
 }
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 

@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <!--Reset css-->
     <link href="reset.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="normalize.css"/>-->
 
-    <!--Font Awesome-->
-    <script src="https://use.fontawesome.com/1d25331271.js"></script>
-    <!--<script defer src="/static/fontawesome/fa-v4-shim.js"></script>-->
-
     <!--Owl Carousel2-->
     <link rel="stylesheet" href="libs/owlcarousel2/owl.carousel.css">
     <link rel="stylesheet" href="libs/owlcarousel2/owl.theme.default.min.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <!--Fontello-->
     <link rel="stylesheet" href="css/fontello.css">
 
@@ -149,7 +149,9 @@
         </div>
     </div>
     <div class="item2">
-        <img src="img/banner-2.jpg" alt="" class="banner"/>
+        <a href="#">
+            <img src="img/banner-2.jpg" alt="" class="banner"/>
+        </a>
     </div>
     <div class="item2">
         <img src="img/banner-3.jpg" alt="" class="banner"/>
@@ -162,26 +164,64 @@
     </div>
 </section>
 <section class="emailSection">
-    <div class="container emailContainer">
-        <form action="#" method="post">
-            <label for="user-email">Stay updated</label>
-            <input type="email" id="user-email" value="Your email address" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Your email address';}" required/><!--
+    <div class="container  emailFlex">
+        <div class="stayUpdatedContainer">
+            <form action="#" method="post">
+                <label for="user-email">Stay updated</label>
+                <input type="email" id="user-email" value="Your email address" onfocus="this.value = '';"
+                       onblur="if (this.value == '') {this.value = 'Your email address';}" required/><!--
             --><button type="submit">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-        </form>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+            </form>
+        </div>
+        <div class="findUsContainer">
+            <p>Find us here</p>
+            <a href="#">
+                <i class="icon-facebook"></i>
+            </a><!--
+            --><a href="#">
+                <i class="icon-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="icon-pinterest-circled"></i>
+            </a>
+        </div>
     </div>
-    <div class="socialIcons">
-        <p>Find us here</p>
-        <i class="icon-facebook"></i>
-        <i class="icon-twitter"></i>
-        <i class="icon-pinterest-circled"></i>
+</section>
+
+<section class="container layersSection">
+
+    <div class="layerContainer">
+        <div class="layerItem1">
+            <div class="ferrisWheel">
+                <a href="#">
+                    <img src="img/layer-1.jpg" alt="" class="layer"/>
+                </a>
+            </div>
+        </div>
+        <div class="layerItem2">
+            <div class="girlBlue">
+                <a href="#">
+                    <img src="img/layer-2.jpg" alt="" class="layer"/>
+                </a>
+            </div>
+            <div class="subLayerContainer">
+                <div class="girlPortrait">
+                    <a href="#">
+                        <img src="img/layer-3-3.jpg" alt="" class="layer"/>
+                    </a>
+                </div>
+                <div class="leatherMan">
+                    <a href="#">
+                        <img src="img/layer-4.jpg" alt="" class="layer"/>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    
 
 </section>
-<section>section photos</section>
 <section>section gallery</section>
 <section>section clearance</section>
 <section>section brands</section>
