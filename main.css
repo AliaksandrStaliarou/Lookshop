@@ -1,25 +1,5 @@
 
 
-@font-face {
-    font-family: LuxuryRoyaleJF;
-    src: url(font/LuxuryRoyaleJF.ttf);
-}
-
-@font-face {
-    font-family: HelveticaNeueLTStd-LtCn;
-    src: url(font/HelveticaNeueLTStd-LtCn.otf);
-}
-
-@font-face {
-    font-family:HelveticaNeueLTStd-Th;
-    src: url(font/HelveticaNeueLTStd-Th.otf);
-}
-
-/*@font-face {
-    font-family: HelveticaNeueLTStd-LtCn;
-    src: url(font/HelveticaNeueLTStd-LtCn.otf);
-}*/
-
 
 
 * {
@@ -33,6 +13,10 @@ body {
     font-size: 16px;
     font-family: arial, sans-serif;
 }
+
+/*a {
+    font-size: 0;
+}*/
 
 .container {
     margin: 0 auto;
@@ -918,18 +902,24 @@ hr:nth-child(2) {
 }
 
 .layerItem1 {
-    width: 50%;
-   /* margin-right: 0.05%;*/
+    width: 49.9%;
+
+    overflow: hidden;
 }
 
 .layerItem2 {
-    width: 50%;
-   /* margin-left: 0.05%;*/
+    display: flex;
+    width: 49.9%;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
+
 
 .subLayerContainer {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .layer {
@@ -938,8 +928,200 @@ hr:nth-child(2) {
 }
 
 .ferrisWheel {
-    margin-right: 0.5%;
+    position: relative;
+
 }
+
+.ferrisWheel h2 {
+    position: absolute;
+    top: 19%;
+    left: 61.5%;
+    text-transform: uppercase;
+    font-family: HelveticaNeueLTStd-BlkCn, Arial, sans-serif;
+    font-size: 2.625vw;
+    color: #414141;
+}
+
+.ferrisWheel h2 span {
+    position: absolute;
+    top: 95%;
+    left: -107%;
+    font-family: HelveticaNeueLTStd-ThCn, Arial, sans-serif;
+    font-size: 5.75vw;
+    color: #414141;
+    letter-spacing: 0.05vw;
+}
+
+.ferrisWheel a hr:nth-child(2),
+.ferrisWheel a hr:nth-child(3) {
+    position: absolute;
+    top: 53.09%;
+    height: 1px;
+    width: 17.97520661157025%;
+    background-color: #414141;
+    border: none;
+}
+
+.ferrisWheel a hr:nth-child(2) {
+    left: 47%;
+}
+
+.ferrisWheel a hr:nth-child(3) {
+    left: 73%;
+}
+
+.ferrisWheel a p {
+    position: absolute;
+    top: 48.5%;
+    left: 65.5%;
+    width: 6.84%;
+    height: 2.579vw;
+    background-color: #414141;
+    border-radius: 50%;
+    font-family: HelveticaNeueLTStd-LtIt, Arial, sans-serif;
+    font-size: 1.75vw;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.579vw;
+}
+
+.ferrisWheel a h2:nth-child(5) {
+    position: absolute;
+    top: 56.5%;
+    left: 45.9%;
+    text-transform: uppercase;
+    font-family: HelveticaNeueLTStd-BlkCn, Arial, sans-serif;
+    font-size: 6.5vw;
+    color: #4fafa0;
+}
+
+.ferrisWheel img:hover {
+    transform: scale(1.2);
+}
+.ferrisWheel:hover img {
+    /*transform: scale(1.2);*/
+}
+
+.ferrisWheel:hover h2 {
+    transform: none;
+}
+
+.ferrisWheel img {
+    transition: 0.5s;
+
+}
+
+.girlBlueAnimationContainer {
+    overflow: hidden;
+    height: 49.2%;
+}
+
+.girlBlue {
+    position: relative;
+    transition: 0.5s;
+    height: 100%;
+
+}
+
+.girlBlue:hover {
+    transform: scale(1.2);
+}
+
+.girlBlue .ellipse {
+    position: absolute;
+    top: 10%;
+    left: 5.9%;
+    width: 27%;
+}
+
+.girlBlue a {
+    text-decoration: none;
+}
+
+.girlBlue h2 {
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    font-family: Bello-Script, Script MT, sans-serif;
+    font-size: 1.6875vw;
+    color: #fd926d;
+}
+
+.girlBlue h2 span:nth-child(2) {
+    position: absolute;
+    left: -21%;
+    font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
+    font-size: 3.375vw;
+    color: #c1aea8;
+    text-transform: uppercase;
+}
+
+.girlBlue h2 span:nth-child(4) {
+    position: absolute;
+    top: 153%;
+    left: -2%;
+    font-family: HelveticaNeueLTStd-BdCn, Arial, sans-serif;
+    font-size: 1.0625vw;
+    color: #6a6a6a;
+    text-transform: uppercase;
+    letter-spacing: 0.01vw
+}
+
+
+
+.girlPortrait,
+.leatherMan {
+    position: relative;
+    transition: 0.5s;
+}
+
+.girlPortrait:hover {
+    transform: scale(1.2);
+}
+
+.girlPortraitAnimationContainer {
+    overflow: hidden;
+    width: 50%;
+}
+
+.girlPortrait h2 {
+    position: absolute;
+    top: 73%;
+    left: 11.5%;
+    font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
+    font-size: 2.625vw;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.girlPortrait i {
+    position: absolute;
+    top: 78%;
+    left: 83%;
+    font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
+    font-size: 1vw;
+    color: #ffffff;
+
+}
+
+
+
+
+/*.girlBlue  a p {
+    position: absolute;
+    top: 10%;
+    left: 5.9%;
+    width: 27.014%;
+    height: 10.235vw;
+    background-color: white;
+    border-radius: 50%;
+}*/
+
+
+
+
+
+
 
 
 
