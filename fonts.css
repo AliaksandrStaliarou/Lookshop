@@ -45,4 +45,15 @@
     src: url(font/HelveticaNeueLTStd-BdCn.otf);
 }
 
+@font-face {
+    font-family: HelveticaNeueLTStd-Cn;
+    src: url(font/HelveticaNeueLTStd-Cn.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeueLTStd-Lt;
+    src: url(font/HelveticaNeueLTStd-Lt.otf);
+}
+
+
 

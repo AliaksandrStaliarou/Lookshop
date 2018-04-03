@@ -903,8 +903,6 @@ hr:nth-child(2) {
 
 .layerItem1 {
     width: 49.9%;
-
-    overflow: hidden;
 }
 
 .layerItem2 {
@@ -912,7 +910,6 @@ hr:nth-child(2) {
     width: 49.9%;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 
@@ -923,13 +920,32 @@ hr:nth-child(2) {
 }
 
 .layer {
-    max-width: 100%;
+   /* max-width: 100%;*/
     height: auto;
+    width: 100%;
 }
 
-.ferrisWheel {
-    position: relative;
 
+
+.ferrisWheel {
+    overflow: hidden;
+}
+
+.ferrisWheel img {
+    transition: 0.5s;
+}
+
+.ferrisWheel:hover img {
+    transform: scale(1.2);
+}
+
+.ferrisWheel a,
+.girlBlue a,
+.girlPortrait a,
+.leatherMan a {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
 }
 
 .ferrisWheel h2 {
@@ -952,17 +968,17 @@ hr:nth-child(2) {
     letter-spacing: 0.05vw;
 }
 
-.ferrisWheel a hr:nth-child(2),
-.ferrisWheel a hr:nth-child(3) {
+.ferrisWheel a hr:nth-child(3),
+.ferrisWheel a hr:nth-child(4) {
     position: absolute;
-    top: 53.09%;
+    top: 53.5%;
     height: 1px;
     width: 17.97520661157025%;
     background-color: #414141;
     border: none;
 }
 
-.ferrisWheel a hr:nth-child(2) {
+.ferrisWheel a hr:nth-child(4) {
     left: 47%;
 }
 
@@ -972,7 +988,7 @@ hr:nth-child(2) {
 
 .ferrisWheel a p {
     position: absolute;
-    top: 48.5%;
+    top: 48.8%;
     left: 65.5%;
     width: 6.84%;
     height: 2.579vw;
@@ -985,9 +1001,9 @@ hr:nth-child(2) {
     line-height: 2.579vw;
 }
 
-.ferrisWheel a h2:nth-child(5) {
+.ferrisWheel a h2:last-child {
     position: absolute;
-    top: 56.5%;
+    top: 56.9%;
     left: 45.9%;
     text-transform: uppercase;
     font-family: HelveticaNeueLTStd-BlkCn, Arial, sans-serif;
@@ -995,35 +1011,17 @@ hr:nth-child(2) {
     color: #4fafa0;
 }
 
-.ferrisWheel img:hover {
-    transform: scale(1.2);
-}
-.ferrisWheel:hover img {
-    /*transform: scale(1.2);*/
-}
 
-.ferrisWheel:hover h2 {
-    transform: none;
-}
-
-.ferrisWheel img {
-    transition: 0.5s;
-
-}
-
-.girlBlueAnimationContainer {
-    overflow: hidden;
-    height: 49.2%;
-}
 
 .girlBlue {
-    position: relative;
-    transition: 0.5s;
-    height: 100%;
-
+    overflow: hidden;
 }
 
-.girlBlue:hover {
+.girlBlue img:not(.ellipse) {
+    transition: 0.5s;
+}
+
+.girlBlue:hover img:not(.ellipse) {
     transform: scale(1.2);
 }
 
@@ -1032,10 +1030,6 @@ hr:nth-child(2) {
     top: 10%;
     left: 5.9%;
     width: 27%;
-}
-
-.girlBlue a {
-    text-decoration: none;
 }
 
 .girlBlue h2 {
@@ -1068,26 +1062,24 @@ hr:nth-child(2) {
 }
 
 
-
 .girlPortrait,
 .leatherMan {
-    position: relative;
+    /*position: relative;*/
+    overflow: hidden;
+}
+
+.girlPortrait img {
     transition: 0.5s;
 }
 
-.girlPortrait:hover {
+.girlPortrait:hover img {
     transform: scale(1.2);
-}
-
-.girlPortraitAnimationContainer {
-    overflow: hidden;
-    width: 50%;
 }
 
 .girlPortrait h2 {
     position: absolute;
-    top: 73%;
-    left: 11.5%;
+    top: 74.5%;
+    left: 10.5%;
     font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
     font-size: 2.625vw;
     color: #ffffff;
@@ -1096,14 +1088,56 @@ hr:nth-child(2) {
 
 .girlPortrait i {
     position: absolute;
-    top: 78%;
+    top: 80%;
     left: 83%;
     font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
     font-size: 1vw;
     color: #ffffff;
-
 }
 
+
+.leatherMan img {
+    transition: 0.5s;
+}
+
+.leatherMan:hover img {
+    transform: scale(1.2);
+}
+
+.leatherMan a {
+    text-align: center;
+}
+
+.leatherMan h2 {
+    position: absolute;
+    top: 26.5%;
+    left: 7.5%;
+    font-family: HelveticaNeueLTStd-Cn, Arial, sans-serif;
+    font-size: 2.8125vw;
+    line-height: 86%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.leatherMan a button {
+    position: absolute;
+    top: 72%;
+    left: 13%;
+    background: #4fafa0;
+    padding: 2.9% 10% 2.9% 3.5%;
+    font-family: HelveticaNeueLTStd-Lt, Arial, sans-serif;
+    font-size: 0.9375vw;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.leatherMan a button i {
+    position: absolute;
+    top: 30%;
+    left: 83%;
+}
 
 
 
