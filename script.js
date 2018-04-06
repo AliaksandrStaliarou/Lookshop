@@ -15,16 +15,33 @@ $(document).ready(function(){
 
     $(".slide-two").owlCarousel({
         items: 4,
+        loop: true,
         stagePadding: 110,
         margin: 30,
+        responsiveClass:true,
+        nav: true,
+        navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        dots: false,
+        pagination : true
+    });
+
+ /*   $(".slide-two").owlCarousel({
+        items: 6,
+        margin: 20,
+>>>>>>> origin/master
         loop: true,
         responsiveClass:true,
         nav: true,
         navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
             '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+<<<<<<< HEAD
         pagination: true,
         dots: false
-    });
+=======
+        pagination : true
+>>>>>>> origin/master*/
+   /* });*/
 
 });
 
@@ -53,17 +70,24 @@ document.getElementById("defaultOpen").click();
 
 
 /*Carousel slide-two buttons. Changing colours*/
-var owlNext = document.querySelector('.slide-two .owl-next');
+/*var owlNext = document.querySelector('.slide-two .owl-next');
 owlNext.addEventListener('click', styleChanger);
 function styleChanger() {
     owlNext.style.background = '#fd926d';
 }
 
-var carousel = document.querySelector('owl-carousel.slide-two');
+var carousel = document.querySelector('owl-carousel.slide-two');*/
 
 
 
-/*Opening search button*/
+
+
+
+
+
+
+
+
 var faSearch = document.querySelector('.searchBlock i');
 faSearch.addEventListener('click', searchOpener);
 
