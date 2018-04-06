@@ -53,11 +53,11 @@ document.getElementById("defaultOpen").click();
 
 
 /*Carousel slide-two buttons. Changing colours*/
-/*var owlNext = document.querySelector('.slide-two .owl-next');
+var owlNext = document.querySelector('.slide-two .owl-next');
 owlNext.addEventListener('click', styleChanger);
 function styleChanger() {
     owlNext.style.background = '#fd926d';
-}*/
+}
 
 var carousel = document.querySelector('owl-carousel.slide-two');
 
