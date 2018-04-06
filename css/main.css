@@ -1,36 +1,5 @@
 
 
-@font-face {
-    font-family: LuxuryRoyaleJF;
-    src: url(font/LuxuryRoyaleJF.ttf);
-}
-
-@font-face {
-    font-family: HelveticaNeueLTStd-LtCn;
-    src: url(font/HelveticaNeueLTStd-LtCn.otf);
-}
-
-@font-face {
-    font-family:HelveticaNeueLTStd-Th;
-    src: url(font/HelveticaNeueLTStd-Th.otf);
-}
-
-@font-face {
-    font-family: HelveticaNeueLTStd-BlkCn;
-    src: url(font/HelveticaNeueLTStd-BlkCn.otf);
-}
-
-@font-face {
-    font-family: HelveticaNeueLTStd-ThCn;
-    src: url(font/HelveticaNeueLTStd-ThCn.otf);
-}
-
-@font-face {
-    font-family: HelveticaNeueLTStd-LtIt;
-    src: url(font/HelveticaNeueLTStd-LtIt.otf);
-}
-
-
 
 
 * {
@@ -45,6 +14,10 @@ body {
     font-size: 16px;
     font-family: arial, sans-serif;
 }
+
+/*a {
+    font-size: 0;
+}*/
 
 .container {
     margin: 0 auto;
@@ -952,6 +925,7 @@ hr:nth-child(2) {
 
 .layersSection {
     margin-top: 3.35%;
+    margin-bottom: 4.2%;
 }
 
 .layerContainer {
@@ -964,14 +938,23 @@ hr:nth-child(2) {
 }
 
 .layerItem1 {
-    width: 50%;
-
-    overflow: hidden;
+    width: 49.9%;
 }
 
 .layerItem2 {
-    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 49.9%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
+
 
 .subLayerContainer {
     display: -webkit-box;
@@ -980,17 +963,38 @@ hr:nth-child(2) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    width: 100%;
 }
 
 .layer {
-    max-width: 100%;
+   /* max-width: 100%;*/
     height: auto;
+    width: 100%;
 }
 
-.ferrisWheel {
-    position: relative;
-    margin-right: 0.5%;
 
+.ferrisWheel {
+    overflow: hidden;
+}
+
+.ferrisWheel img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.ferrisWheel:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ferrisWheel a,
+.girlBlue a,
+.girlPortrait a,
+.leatherMan a {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
 }
 
 .ferrisWheel h2 {
@@ -1013,17 +1017,17 @@ hr:nth-child(2) {
     letter-spacing: 0.05vw;
 }
 
-.ferrisWheel a hr:nth-child(2),
-.ferrisWheel a hr:nth-child(3) {
+.ferrisWheel a hr:nth-child(3),
+.ferrisWheel a hr:nth-child(4) {
     position: absolute;
-    top: 53.09%;
+    top: 53.5%;
     height: 1px;
     width: 17.97520661157025%;
     background-color: #414141;
     border: none;
 }
 
-.ferrisWheel a hr:nth-child(2) {
+.ferrisWheel a hr:nth-child(4) {
     left: 47%;
 }
 
@@ -1033,7 +1037,7 @@ hr:nth-child(2) {
 
 .ferrisWheel a p {
     position: absolute;
-    top: 48.5%;
+    top: 48.8%;
     left: 65.5%;
     width: 6.84%;
     height: 2.579vw;
@@ -1046,9 +1050,9 @@ hr:nth-child(2) {
     line-height: 2.579vw;
 }
 
-.ferrisWheel a h2:nth-child(5) {
+.ferrisWheel a h2:last-child {
     position: absolute;
-    top: 56.5%;
+    top: 56.9%;
     left: 45.9%;
     text-transform: uppercase;
     font-family: HelveticaNeueLTStd-BlkCn, Arial, sans-serif;
@@ -1056,30 +1060,242 @@ hr:nth-child(2) {
     color: #4fafa0;
 }
 
-.ferrisWheel:hover {
+
+
+.girlBlue {
+    overflow: hidden;
+}
+
+.girlBlue img:not(.ellipse) {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.girlBlue:hover img:not(.ellipse) {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
-.ferrisWheel {
+.girlBlue .ellipse {
+    position: absolute;
+    top: 10%;
+    left: 5.9%;
+    width: 27%;
+}
+
+.girlBlue h2 {
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    font-family: Bello-Script, Script MT, sans-serif;
+    font-size: 1.6875vw;
+    color: #fd926d;
+}
+
+.girlBlue h2 span:nth-child(2) {
+    position: absolute;
+    left: -21%;
+    font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
+    font-size: 3.375vw;
+    color: #c1aea8;
+    text-transform: uppercase;
+}
+
+.girlBlue h2 span:nth-child(4) {
+    position: absolute;
+    top: 153%;
+    left: -2%;
+    font-family: HelveticaNeueLTStd-BdCn, Arial, sans-serif;
+    font-size: 1.0625vw;
+    color: #6a6a6a;
+    text-transform: uppercase;
+    letter-spacing: 0.01vw
+}
+
+
+.girlPortrait,
+.leatherMan {
+    /*position: relative;*/
+    overflow: hidden;
+}
+
+.girlPortrait img {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
-
-
-.girlBlue {
-    position: relative;
-    overflow: hidden;
+.girlPortrait:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.girlBlue .qwe {
+.girlPortrait h2 {
     position: absolute;
-    top: 10%;
-    left: 5.9%;
-    width: 25%;
+    top: 74.5%;
+    left: 10.5%;
+    font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
+    font-size: 2.625vw;
+    color: #ffffff;
+    text-transform: uppercase;
 }
+
+.girlPortrait i {
+    position: absolute;
+    top: 80%;
+    left: 83%;
+    font-family: HelveticaNeueLTStd-UltLtCn, Arial, sans-serif;
+    font-size: 1vw;
+    color: #ffffff;
+}
+
+
+.leatherMan img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.leatherMan:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.leatherMan a {
+    text-align: center;
+}
+
+.leatherMan h2 {
+    position: absolute;
+    top: 26.5%;
+    left: 7.5%;
+    font-family: HelveticaNeueLTStd-Cn, Arial, sans-serif;
+    font-size: 2.8125vw;
+    line-height: 86%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.leatherMan a button {
+    position: absolute;
+    top: 72%;
+    left: 13%;
+    background: #4fafa0;
+    padding: 2.9% 10% 2.9% 3.5%;
+    font-family: HelveticaNeueLTStd-Lt, Arial, sans-serif;
+    font-size: 0.9375vw;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.leatherMan a button i {
+    position: absolute;
+    top: 30%;
+    left: 83%;
+}
+
+
+/**************************/
+/*GIRLS CAROUSEL*/
+/**************************/
+
+.girlsCarousel {
+    padding: 2.5% 0;
+    background: #fd926d;
+}
+
+.slide-twoItem div {
+    padding: 3%;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.slide-twoItem div a {
+    font-family: Arial, sans-serif;
+    font-size: 0.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.slide-twoItem div a:first-child {
+    color: #373737;
+}
+
+.slide-twoItem div a:last-child {
+    padding: 2%;
+    background: #fd926d;
+    color: #ffffff;
+
+}
+
+.tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tablink {
+    padding: 1.6% 2%;
+    background: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9375em;
+    color: #555555;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+.tablink:hover {
+    text-shadow: 0 0 0.01px;
+}
+
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.slide-two .owl-prev,
+.slide-two .owl-next {
+    top: -11.5%;
+    padding: 1.3% 1.4% !important;
+
+}
+
+.slide-two .owl-next {
+    left: 86.7%;
+    background: red !important;
+}
+
+.slide-two .owl-prev {
+    left: 82.6%;
+    background: gray !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*.girlBlue  a p {
     position: absolute;
@@ -1090,18 +1306,6 @@ hr:nth-child(2) {
     background-color: white;
     border-radius: 50%;
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

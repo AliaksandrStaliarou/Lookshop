@@ -894,6 +894,7 @@ hr:nth-child(2) {
 
 .layersSection {
     margin-top: 3.35%;
+    margin-bottom: 4.2%;
 }
 
 .layerContainer {
@@ -924,7 +925,6 @@ hr:nth-child(2) {
     height: auto;
     width: 100%;
 }
-
 
 
 .ferrisWheel {
@@ -1140,6 +1140,100 @@ hr:nth-child(2) {
 }
 
 
+/**************************/
+/*GIRLS CAROUSEL*/
+/**************************/
+
+.girlsCarousel {
+    padding: 2.5% 0;
+    background: #fd926d;
+}
+
+.slide-twoItem div {
+    padding: 3%;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.slide-twoItem div a {
+    font-family: Arial, sans-serif;
+    font-size: 0.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.slide-twoItem div a:first-child {
+    color: #373737;
+}
+
+.slide-twoItem div a:last-child {
+    padding: 2%;
+    background: #fd926d;
+    color: #ffffff;
+
+}
+
+.tab {
+    display: flex;
+}
+
+.tablink {
+    /*padding: 1.6% 2%;*/
+    padding-top: 1.6%;
+    padding-right: 2%;
+    padding-bottom: 1.6%;
+    padding-left: 2%;
+    background: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9375em;
+    color: #555555;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+.tablink:hover {
+    text-shadow: 0 0 0.01px;
+}
+
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.slide-two .owl-prev,
+.slide-two .owl-next {
+    top: -11.5%;
+    padding: 1.3% 1.4% !important;
+
+}
+
+.slide-two .owl-next {
+    left: 86.7%;
+    background: red !important;
+}
+
+.slide-two .owl-prev {
+    left: 82.6%;
+    background: gray !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*.girlBlue  a p {
     position: absolute;
@@ -1150,18 +1244,6 @@ hr:nth-child(2) {
     background-color: white;
     border-radius: 50%;
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

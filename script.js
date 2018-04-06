@@ -2,25 +2,68 @@
  * Created by נ4םנ on 15.01.2018.
  */
 
-
-
-
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".slide-one").owlCarousel({
         items: 1,
         loop: true,
         responsiveClass:true,
         nav: true,
         navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-                  '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
-        pagination : true
+            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        pagination: true
     });
+
+    $(".slide-two").owlCarousel({
+        items: 4,
+        stagePadding: 110,
+        margin: 30,
+        loop: true,
+        responsiveClass:true,
+        nav: true,
+        navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        pagination: true,
+        dots: false
+    });
+
 });
 
+/*Changing clothers carousel*/
+function openCarousel(elmnt, carouselName, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.querySelectorAll(".tab .tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.background = "";
+        tablinks[i].style.color = "";
+    }
+
+    elmnt.style.color = color;
+    elmnt.style.background = '#fd926d';
+    document.getElementById(carouselName).style.display = "block";
+
+}
+
+document.getElementById("defaultOpen").click();
 
 
 
+/*Carousel slide-two buttons. Changing colours*/
+/*var owlNext = document.querySelector('.slide-two .owl-next');
+owlNext.addEventListener('click', styleChanger);
+function styleChanger() {
+    owlNext.style.background = '#fd926d';
+}*/
 
+var carousel = document.querySelector('owl-carousel.slide-two');
+
+
+
+/*Opening search button*/
 var faSearch = document.querySelector('.searchBlock i');
 faSearch.addEventListener('click', searchOpener);
 

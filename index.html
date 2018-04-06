@@ -11,6 +11,7 @@
     <!--Owl Carousel2-->
     <link rel="stylesheet" href="libs/owlcarousel2/owl.carousel.css">
     <link rel="stylesheet" href="libs/owlcarousel2/owl.theme.default.min.css">
+    <!--<link rel="stylesheet" href="libs/OwlCarousel2-2.3.3/docs/assets/owlcarousel/assets/owl.carousel.css"/>-->
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
@@ -134,7 +135,7 @@
     </div>
 </header>
 
-<section class="owl-carousel">
+<section class="owl-carousel slide-one">
     <div class="owlItem">
         <div class="item1">
             <hr>
@@ -192,7 +193,6 @@
 </section>
 
 <section class="container layersSection">
-
     <div class="layerContainer">
         <div class="layerItem1">
             <div class="ferrisWheel">
@@ -203,7 +203,6 @@
                     <hr/>
                     <p>&</p>
                     <h2>looks</h2>
-
                 </a>
             </div>
         </div>
@@ -225,7 +224,6 @@
                     </a>
                 </div>
 
-
                 <div class="leatherMan">
                     <a href="#">
                         <img src="img/layer-4.jpg" alt="" class="layer"/>
@@ -236,9 +234,145 @@
             </div>
         </div>
     </div>
-
 </section>
-<section>section gallery</section>
+
+<div class="container tab">
+    <button class="tablink" onclick="openCarousel(this, 'whats hot', '#ffffff')" id="defaultOpen">What's hot?</button>
+    <button class="tablink" onclick="openCarousel(this, 'designers', '#ffffff')">Designers</button>
+    <button class="tablink" onclick="openCarousel(this, 'featured', '#ffffff')">Featured</button>
+    <button class="tablink" onclick="openCarousel(this, 'latest', '#ffffff')">Latest</button>
+   <!-- <div class="owl-nav"></div>-->
+</div>
+
+<section id="whats hot" class="owl-carousel slide-two girlsCarousel tabcontent">
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-2.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Mimosa lace dress</a>
+            <p>$76.95</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-3.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Feel tank</a>
+            <p>$59.95</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-4.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Hot shorts</a>
+            <p>$35.95</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-5.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Petrol sweater</a>
+            <p>$21.50</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-1.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Yellow jeans</a>
+            <p>$50.90</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <img src="img/girl-6.jpg" alt=""/>
+        <div>
+            <a href="#">Flower dress</a>
+            <p>$30.90</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="designers" class="owl-carousel slide-two girlsCarousel tabcontent">
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-7.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Mimosa lace dress</a>
+            <p>$76.95</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-7.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Feel tank</a>
+            <p>$59.95</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-7.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Hot shorts</a>
+            <p>$35.95</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-7.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Petrol sweater</a>
+            <p>$21.50</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+
+    <div class="slide-twoItem">
+        <a href="#">
+            <img src="img/girl-7.jpg" alt=""/>
+        </a>
+        <div>
+            <a href="#">Yellow jeans</a>
+            <p>$50.90</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+    <div class="slide-twoItem">
+        <img src="img/girl-7.jpg" alt=""/>
+        <div>
+            <a href="#">Flower dress</a>
+            <p>$30.90</p>
+            <a href="#">Add to cart<i class="icon-plus"></i></a>
+        </div>
+    </div>
+</section>
+
+
+
+
 <section>section clearance</section>
 <section>section brands</section>
 <section>section about lookshop</section>
@@ -246,7 +380,7 @@
 <footer>footer</footer>
 
 <script src="libs/jquery-3.3.1.js"></script>
-<script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+<script src="libs/owlcarousel2/owl.carousel2.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
