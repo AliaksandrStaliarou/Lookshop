@@ -17,7 +17,7 @@ $(document).ready(function(){
         items: 4,
         loop: true,
         stagePadding: 110,
-        margin: 30,
+        margin: 28,
         responsiveClass:true,
         nav: true,
         navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
@@ -26,26 +26,18 @@ $(document).ready(function(){
         pagination : true
     });
 
- /*   $(".slide-two").owlCarousel({
-        items: 6,
-        margin: 20,
->>>>>>> origin/master
-        loop: true,
-        responsiveClass:true,
-        nav: true,
-        navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
-<<<<<<< HEAD
-        pagination: true,
-        dots: false
-=======
-        pagination : true
->>>>>>> origin/master*/
-   /* });*/
+    /*Carousel slide-two buttons. Changing colours*/
+/*    var owlNext = $(".slide-two .owl-nav");
+    owlNext.on('click', 'button', function() {
+        $(this).attr('style', 'background: #f2f2f2 !important');
+    });*/
+
 
 });
 
-/*Changing clothers carousel*/
+
+
+/*Changing clothers' lines in carousel*/
 function openCarousel(elmnt, carouselName, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -66,24 +58,6 @@ function openCarousel(elmnt, carouselName, color) {
 }
 
 document.getElementById("defaultOpen").click();
-
-
-
-/*Carousel slide-two buttons. Changing colours*/
-/*var owlNext = document.querySelector('.slide-two .owl-next');
-owlNext.addEventListener('click', styleChanger);
-function styleChanger() {
-    owlNext.style.background = '#fd926d';
-}
-
-var carousel = document.querySelector('owl-carousel.slide-two');*/
-
-
-
-
-
-
-
 
 
 
