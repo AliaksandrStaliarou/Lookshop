@@ -32,7 +32,6 @@ $(document).ready(function(){
         $(this).attr('style', 'background: #f2f2f2 !important');
     });*/
 
-
 });
 
 
