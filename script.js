@@ -16,12 +16,12 @@ $(document).ready(function(){
     $(".slide-two").owlCarousel({
         items: 4,
         loop: true,
-        stagePadding: 117,
-        margin: 31,
-        responsiveClass: true,
+        stagePadding: 110,
+        margin: 28,
+        responsiveClass:true,
         nav: true,
-        navText: ['<i class="icon-left-open-big" aria-hidden="true"></i>',
-            '<i class="icon-right-open-big" aria-hidden="true"></i>'],
+        navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
         dots: false,
         pagination : true
     });
@@ -31,6 +31,7 @@ $(document).ready(function(){
     owlNext.on('click', 'button', function() {
         $(this).attr('style', 'background: #f2f2f2 !important');
     });*/
+
 
 });
 

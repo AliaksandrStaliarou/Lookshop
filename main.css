@@ -1167,6 +1167,8 @@ hr:nth-child(2) {
 }
 
 .slide-twoItem div a:last-child {
+    position: relative;
+
     display: inline-block;
     padding: 4% 5.3%;
     background: #fd926d;
@@ -1180,6 +1182,7 @@ hr:nth-child(2) {
     font-size: 1.375em;
     color: #373737;
 }
+
 
 .tab {
     display: flex;
@@ -1199,6 +1202,7 @@ hr:nth-child(2) {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .tablink:hover {
@@ -1228,6 +1232,7 @@ hr:nth-child(2) {
 }
 
 .slide-two .owl-prev {
+
     left: 82.9%;
     background: #fd926d !important;
 }
@@ -1236,6 +1241,24 @@ hr:nth-child(2) {
 .slide-two .owl-next:hover {
     background: #f2f2f2 !important;
 }
+
+
+.slide-two .owl-prev:hover,
+.slide-two .owl-next:hover {
+    background: #f2f2f2 !important;
+}
+
+.slide-two .owl-prev .fa.fa-chevron-left,
+.slide-two .owl-next .fa.fa-chevron-right {
+    color: #ffffff;
+}
+
+.slide-two .owl-prev:hover .fa.fa-chevron-left,
+.slide-two .owl-next:hover .fa.fa-chevron-right {
+    color: #979797;
+}
+
+
 
 .slide-two .owl-prev .icon-left-open-big,
 .slide-two .owl-next .icon-right-open-big {
