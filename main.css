@@ -1148,14 +1148,18 @@ hr:nth-child(2) {
     background: #fd926d;
 }
 
+.slide-twoItem {
+    position: relative;
+    overflow: hidden;
+    padding: 15% 0;
+    transition: 0.3s;
+}
+
 .slide-twoItem div {
     padding: 4% 3% 5% 3%;
     text-align: center;
     background: #f7f7f7;
 }
-
-
-
 
 .slide-twoItem div a {
     font-family: Arial, sans-serif;
@@ -1184,17 +1188,12 @@ hr:nth-child(2) {
     color: #373737;
 }
 
-.slide-twoItem {
-    padding: 15% 0;
-    transition: 0.3s;
-}
-
 .slide-twoItem:hover {
     transform: scale(1.08);
 }
 
 .slide-twoItem:hover > div {
-    box-shadow: 0 10px 20px #be6d52;
+    box-shadow: 3px 10px 20px #be6d52;
 }
 
 .slide-twoItem .shopIt {
