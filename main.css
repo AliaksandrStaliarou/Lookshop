@@ -1145,7 +1145,6 @@ hr:nth-child(2) {
 /**************************/
 
 .girlsCarousel {
-    padding: 2.5% 0;
     background: #fd926d;
 }
 
@@ -1154,6 +1153,9 @@ hr:nth-child(2) {
     text-align: center;
     background: #f7f7f7;
 }
+
+
+
 
 .slide-twoItem div a {
     font-family: Arial, sans-serif;
@@ -1168,7 +1170,6 @@ hr:nth-child(2) {
 
 .slide-twoItem div a:last-child {
     position: relative;
-
     display: inline-block;
     padding: 4% 5.3%;
     background: #fd926d;
@@ -1183,17 +1184,60 @@ hr:nth-child(2) {
     color: #373737;
 }
 
+.slide-twoItem {
+    padding: 15% 0;
+    transition: 0.3s;
+}
+
+.slide-twoItem:hover {
+    transform: scale(1.08);
+}
+
+.slide-twoItem:hover > div {
+    box-shadow: 0 10px 20px #be6d52;
+}
+
+.slide-twoItem .shopIt {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    padding: 19.22% 19.20%;
+    background: #3d3d3d;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(2);
+    transition: all 0.3s;
+}
+
+.slide-twoItem .shopIt i {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.slide-twoItem .shopIt p {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.slide-twoItem > a {
+    text-decoration: none;
+}
+
+.slide-twoItem:hover .shopIt {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
 
 .tab {
     display: flex;
 }
 
 .tablink {
-    /*padding: 1.6% 2%;*/
-    padding-top: 1.6%;
-    padding-right: 2%;
-    padding-bottom: 1.6%;
-    padding-left: 2%;
+    padding: 1.6% 2%;
     background: none;
     font-family: Arial, sans-serif;
     font-size: 0.9375em;

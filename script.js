@@ -20,8 +20,8 @@ $(document).ready(function(){
         margin: 28,
         responsiveClass:true,
         nav: true,
-        navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        navText: ['<i class="icon-left-open-big" aria-hidden="true"></i>',
+            '<i class="icon-right-open-big" aria-hidden="true"></i>'],
         dots: false,
         pagination : true
     });
