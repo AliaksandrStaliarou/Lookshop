@@ -55,5 +55,8 @@
     src: url(font/HelveticaNeueLTStd-Lt.otf);
 }
 
-
+@font-face {
+    font-family: a_empirial;
+    src: url(font/a_empirial.ttf);
+}
 

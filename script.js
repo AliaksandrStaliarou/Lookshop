@@ -16,8 +16,8 @@ $(document).ready(function(){
     $(".slide-two").owlCarousel({
         items: 4,
         loop: true,
-        stagePadding: 110,
-        margin: 28,
+        stagePadding: 117,
+        margin: 30,
         responsiveClass:true,
         nav: true,
         navText: ['<i class="icon-left-open-big" aria-hidden="true"></i>',

@@ -413,7 +413,7 @@ body {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 3;
         top: 0;
         left: 0;
         background-color: rgb(0,0,0);
@@ -673,6 +673,7 @@ hr:nth-child(2) {
     text-transform: uppercase;
     font-family: HelveticaNeueLTStd-Th, Helvetica, sans-serif;
     font-size: 1.25vw;
+    transition: all 0.3s;
 }
 
 .item1 a i {
@@ -692,12 +693,18 @@ hr:nth-child(2) {
     height: 3px;
     right: 1px;
     background: #dd6b44;
+    transition: all 0.3s;
     /*display: none;*/
 }
 
 .item1 a:hover {
-    background: #dd6b44;
+    background: #4fafa0;
 }
+
+.item1 a:hover:after {
+    background: #0E8673;
+}
+
 
 
 .owl-carousel {
@@ -812,6 +819,7 @@ hr:nth-child(2) {
     border-bottom: 3px solid #dd6b44;
     border-left: none;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .stayUpdatedContainer button:hover {
@@ -1011,6 +1019,35 @@ hr:nth-child(2) {
     color: #4fafa0;
 }
 
+.ferrisWheel a::before,
+.girlBlue a::before,
+.girlPortrait a::before,
+.leatherMan a::before {
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0, 0.2);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    z-index: 1;
+    opacity: 0;
+}
+
+.layerItem1:hover .ferrisWheel a::before,
+.girlBlue:hover a::before,
+.girlPortrait:hover a::before,
+.leatherMan:hover a::before{
+    opacity: 1;
+}
+
+.layersSection h2,
+.layersSection hr,
+.layersSection p,
+.layersSection i,
+.layersSection button {
+    z-index: 2;
+}
+
 
 
 .girlBlue {
@@ -1030,6 +1067,7 @@ hr:nth-child(2) {
     top: 10%;
     left: 5.9%;
     width: 27%;
+    z-index: 2;
 }
 
 .girlBlue h2 {
@@ -1151,7 +1189,7 @@ hr:nth-child(2) {
 .slide-twoItem {
     position: relative;
     overflow: hidden;
-    padding: 15% 0;
+    padding: 13% 0;
     transition: 0.3s;
 }
 
@@ -1175,10 +1213,16 @@ hr:nth-child(2) {
 .slide-twoItem div a:last-child {
     position: relative;
     display: inline-block;
-    padding: 4% 5.3%;
+    padding: 4.83% 5.3%;
     background: #fd926d;
     color: #ffffff;
     box-shadow: inset 0 -3px 0 0 #dd6b44;
+    transition: all 0.3s;
+}
+
+.slide-twoItem div a:last-child:hover {
+    background: #4fafa0;
+    box-shadow: inset 0 -3px 0 0 #0E8673;
 }
 
 .slide-twoItem div p {
@@ -1193,7 +1237,7 @@ hr:nth-child(2) {
 }
 
 .slide-twoItem:hover > div {
-    box-shadow: 3px 10px 20px #be6d52;
+    box-shadow: 0 5px 20px #be6d52;
 }
 
 .slide-twoItem .shopIt {
@@ -1201,12 +1245,17 @@ hr:nth-child(2) {
     top: 25%;
     left: 20%;
     padding: 19.22% 19.20%;
-    background: #3d3d3d;
+    background: rgba(61, 61, 61, 0.8);
     display: inline-block;
     border-radius: 50%;
     opacity: 0;
-    transform: scale(2);
+    transform: scale(0);
     transition: all 0.3s;
+}
+
+.slide-twoItem:hover .shopIt {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .slide-twoItem .shopIt i {
@@ -1223,12 +1272,6 @@ hr:nth-child(2) {
 .slide-twoItem > a {
     text-decoration: none;
 }
-
-.slide-twoItem:hover .shopIt {
-    opacity: 1;
-    transform: scale(1);
-}
-
 
 
 .tab {
@@ -1316,6 +1359,40 @@ hr:nth-child(2) {
 }
 
 
+
+
+/***********************/
+/*CLEARANCE*/
+/***********************/
+
+.sectionClearance {
+    text-align: center;
+}
+
+.clearance {
+    position: relative;
+    display: inline-block;
+    padding: 2.3% 0;
+}
+
+.clearance h3 {
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    font-family: a_empirial, Arial, sans-serif;
+    font-size: 2.25em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.clearance img {
+    width: 100%;
+}
+
+
+.clearance h3 span {
+    font-size: 2em;
+}
 
 
 /*.girlBlue  a p {
