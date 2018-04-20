@@ -1189,7 +1189,7 @@ hr:nth-child(2) {
 .slide-twoItem {
     position: relative;
     overflow: hidden;
-    padding: 13% 0;
+    padding: 13.5% 0;
     transition: 0.3s;
 }
 
@@ -1365,6 +1365,7 @@ hr:nth-child(2) {
 /***********************/
 
 .sectionClearance {
+    position: relative;
     text-align: center;
 }
 
@@ -1376,20 +1377,65 @@ hr:nth-child(2) {
 
 .clearance h3 {
     position: absolute;
-    top: 25%;
-    left: 24%;
+    top: 21%;
+    left: 27%;
     font-family: a_empirial, Arial, sans-serif;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     color: #ffffff;
     text-transform: uppercase;
+    line-height: 54px;
 }
 
 .clearance img {
     width: 100%;
 }
 
-.clearance h3 span {
-    font-size: 2em;
+.clearance h3 span:nth-child(2),
+.clearance h3 span:nth-child(3) {
+    font-size: 5.048125rem;
+}
+
+.clearance h3 span:nth-child(2) {
+    letter-spacing: -2px;
+}
+
+.clearance h3 span:last-child {
+    position: absolute;
+    top: 29%;
+    left: 64%;
+    font-size: 2.25rem;
+}
+
+.sectionClearance hr {
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: #d8d8d8;
+    width: 40.20618556701031%;
+    border: none;
+}
+
+.sectionClearance hr:nth-child(2) {
+    left: 0;
+}
+
+.sectionClearance hr:last-child {
+    right: 0;
+}
+
+
+
+/****************************/
+/*LINE GIRLS*/
+/****************************/
+
+.lineGirls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineGirls .slide-twoItem {
+    padding: 0 0;
 }
 
 
