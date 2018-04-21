@@ -23,7 +23,65 @@ $(document).ready(function(){
         navText: ['<i class="icon-left-open-big" aria-hidden="true"></i>',
             '<i class="icon-right-open-big" aria-hidden="true"></i>'],
         dots: false,
-        pagination : true
+        pagination : true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                stagePadding: false,
+                margin: false
+            },
+            640: {
+                items: 3,
+                nav: true,
+                stagePadding: false,
+                margin: false
+            },
+            760: {
+                items: 4,
+                nav: true,
+                 stagePadding: 60,
+                 margin: 27
+            },
+            850: {
+                stagePadding: 70
+
+            },
+            1000: {
+                stagePadding: 100
+            },
+            1100: {
+                 stagePadding: 117,
+                 margin: 30
+            }
+        }
+    });
+
+    $(".slide-three").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 30,
+        responsiveClass:true,
+        dots: false,
+        nav: false,
+        responsive:{
+            0:{
+                items:2,
+                margin: false
+            },
+            640:{
+                items:3,
+                margin: false
+            },
+            760:{
+                items:4,
+                loop:false,
+                margin: 27
+            },
+            1100:{
+                margin: 30
+            }
+        }
     });
 
     /*Carousel slide-two buttons. Changing colours*/

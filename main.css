@@ -1025,7 +1025,7 @@ hr:nth-child(2) {
 .leatherMan a::before {
     position: absolute;
     content: '';
-    background: rgba(0,0,0, 0.2);
+    background: rgba(0,0,0, 0.3);
     width: 100%;
     height: 100%;
     transition: all 0.5s;
@@ -1358,6 +1358,13 @@ hr:nth-child(2) {
     color: #979797;
 }
 
+@media all and (max-width: 760px) {
+    .slide-twoItem {
+        padding: 13.5% 15px;
+    }
+
+}
+
 
 
 /***********************/
@@ -1372,12 +1379,12 @@ hr:nth-child(2) {
 .clearance {
     position: relative;
     display: inline-block;
-    padding: 2.3% 0;
+    padding-top: 2.4%;
 }
 
 .clearance h3 {
     position: absolute;
-    top: 21%;
+    top: 24%;
     left: 27%;
     font-family: a_empirial, Arial, sans-serif;
     font-size: 2.25rem;
@@ -1408,7 +1415,7 @@ hr:nth-child(2) {
 
 .sectionClearance hr {
     position: absolute;
-    top: 50%;
+    top: 57%;
     height: 1px;
     background-color: #d8d8d8;
     width: 40.20618556701031%;
@@ -1424,20 +1431,86 @@ hr:nth-child(2) {
 }
 
 
+@media all and (max-width: 1160px) {
+    .sectionClearance hr {
+        top: 55%;
+        width: 38%;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .sectionClearance hr {
+        top: 53%;
+        width: 36%;
+    }
+}
+
+@media all and (max-width: 790px) {
+    .sectionClearance hr {
+        width: 34%;
+    }
+}
+
+
+@media all and (max-width: 680px) {
+    .sectionClearance hr {
+        width: 32%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .clearance h3 {
+        top: 22%;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .clearance h3 {
+        top: 20%;
+    }
+
+    .sectionClearance hr {
+        width: 25%;
+    }
+}
+
 
 /****************************/
 /*LINE GIRLS*/
 /****************************/
 
 .lineGirls {
-    display: flex;
-    justify-content: space-between;
+   /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
 }
 
 .lineGirls .slide-twoItem {
-    padding: 0 0;
+    /*flex-basis: 230px;*/
+    /*padding: 11% 0 13.5% 0;*/
 }
 
+.lineGirls .slide-twoItem a {
+    /*display: grid;*/
+}
+
+.lineGirls .slide-twoItem > div {
+    /*width: 220px;*/
+}
+
+.lineGirls .slide-twoItem:hover > div {
+    box-shadow: none;
+}
+
+
+
+@media all and (max-width: 760px) {
+     .lineGirls {
+        /*margin: 0;*/
+        width: 100%;
+    }
+
+}
 
 
 /*.girlBlue  a p {
