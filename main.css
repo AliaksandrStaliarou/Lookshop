@@ -1479,23 +1479,8 @@ hr:nth-child(2) {
 /*LINE GIRLS*/
 /****************************/
 
-.lineGirls {
-   /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;*/
-}
-
 .lineGirls .slide-twoItem {
-    /*flex-basis: 230px;*/
-    /*padding: 11% 0 13.5% 0;*/
-}
-
-.lineGirls .slide-twoItem a {
-    /*display: grid;*/
-}
-
-.lineGirls .slide-twoItem > div {
-    /*width: 220px;*/
+    padding: 11% 0 13.5% 0;
 }
 
 .lineGirls .slide-twoItem:hover > div {
@@ -1509,8 +1494,62 @@ hr:nth-child(2) {
         /*margin: 0;*/
         width: 100%;
     }
-
 }
+
+
+/***********************/
+/*FAVOURITE BRANDS*/
+/***********************/
+
+.favouriteBrands {
+    padding: 2.3% 0 0 0;
+}
+
+.fBrands {
+    position: relative;
+    text-align: center;
+}
+
+.fBrands h3 {
+    Font-family: Arial, sans-serif;
+    font-size: 0.9375em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fBrands .leftLine,
+.fBrands .rightLine {
+    position: absolute;
+    top: 50%;
+    width: 42%;
+    height: 1px;
+    background: #d8d8d8;
+}
+
+.fBrands .leftLine {
+    left: 0;
+}
+
+.fBrands .rightLine {
+    right: 0;
+}
+
+.bList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3% 0 1.45% 0;
+}
+
+.favouriteBrands hr {
+    height: 1px;
+    width: 100%;
+    background: #d8d8d8;
+    border: none;
+}
+
+
+
 
 
 /*.girlBlue  a p {
