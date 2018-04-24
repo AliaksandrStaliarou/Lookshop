@@ -1609,12 +1609,19 @@ hr:nth-child(2) {
 .generalFooterContainer {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
 
 .infoContainer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 66.66666666666667%;
+}
+
+.itemFooterContainer {
+    /*flex-basis: 16.66666666666667%;*/
+   /* flex-grow: 1;*/
 }
 
 .itemFooterContainer  a {
@@ -1648,6 +1655,7 @@ hr:nth-child(2) {
 .socialContainer {
     display: flex;
     justify-content: space-between;
+    width: 33.33333333333334%;
 }
 
 .itemFooterContainer_secured {
@@ -1659,7 +1667,7 @@ hr:nth-child(2) {
     position: absolute;
     top: 29%;
     left: 20%;
-    font-family: Impact;
+    font-family: Impact, sans-serif;
     font-size: 1.888125em;
     color: #a59d9a;
     line-height: 0.7;
