@@ -52,8 +52,8 @@ body {
 
 .moneySelection {
     height: 30px;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
     padding: 0 2px;
     text-align: center;
 }
@@ -1496,6 +1496,12 @@ hr:nth-child(2) {
     }
 }
 
+@media all and (max-width: 760px) {
+    .lineGirls .slide-twoItem {
+        padding: 11% 15px 13.5% 15px;
+    }
+}
+
 
 /***********************/
 /*FAVOURITE BRANDS*/
@@ -1549,6 +1555,17 @@ hr:nth-child(2) {
     border: none;
 }
 
+@media all and (max-width: 890px) {
+    .bList figure:last-child {
+        display: none;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .bList figure:nth-child(7) {
+        display: none;
+    }
+}
 
 /***************************/
 /*ABOUT LOOKSHOP*/
@@ -1603,25 +1620,28 @@ hr:nth-child(2) {
 
 .footer1 {
     background: #ededed;
-    padding: 3% 0;
+    padding: 2.5% 0;
 }
 
 .generalFooterContainer {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .infoContainer {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 66.66666666666667%;
+    width: 647px;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 323px;
 }
 
 .itemFooterContainer {
-    /*flex-basis: 16.66666666666667%;*/
-   /* flex-grow: 1;*/
+    flex-grow: 1;
 }
 
 .itemFooterContainer  a {
@@ -1631,6 +1651,12 @@ hr:nth-child(2) {
     color: #8b8887;
     text-decoration: none;
 }
+
+.itemFooterContainer  a:hover {
+    color: #fd926d;
+}
+
+
 
 .itemFooterContainer h3 {
     font-family: Arial, sans-serif;
@@ -1644,18 +1670,25 @@ hr:nth-child(2) {
     color: #4c4c4b;
 }
 
+.itemFooterContainer a:hover i {
+    color: #a59d9a;
+}
+
+
 .itemFooterContainer ul {
-    padding-top: 5%;
+    padding-top: 10px;
+}
+
+.itemFooterContainer ul li {
+    line-height: 1.2;
 }
 
 .itemFooterContainer_social li {
     display: inline-block;
 }
 
-.socialContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 33.33333333333334%;
+.itemFooterContainer_social ul {
+    width: 161px;
 }
 
 .itemFooterContainer_secured {
@@ -1665,8 +1698,8 @@ hr:nth-child(2) {
 
 .itemFooterContainer_secured p {
     position: absolute;
-    top: 29%;
-    left: 20%;
+    top: 33px;
+    left: 34px;
     font-family: Impact, sans-serif;
     font-size: 1.888125em;
     color: #a59d9a;
@@ -1680,7 +1713,20 @@ hr:nth-child(2) {
 }
 
 
+@media all and (max-width: 1050px) {
+    .itemFooterContainer_secured p {
+        left: 21%;
+    }
+}
 
+@media all and (max-width: 1000px) {
+    .itemFooterContainer {
+        flex-basis: 160px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+}
 
 
 
