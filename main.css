@@ -835,7 +835,7 @@ hr:nth-child(2) {
 
 .findUsContainer {
     line-height: 55px;
-    flex-basis: 245px;
+    flex-basis: 248px;
 }
 
 .findUsContainer p {
@@ -1019,6 +1019,7 @@ hr:nth-child(2) {
     color: #4fafa0;
 }
 
+
 .ferrisWheel a::before,
 .girlBlue a::before,
 .girlPortrait a::before,
@@ -1177,6 +1178,68 @@ hr:nth-child(2) {
     left: 83%;
 }
 
+
+@media all and (min-width: 1290px) {
+    .item1 p {
+        font-size: 36px;
+    }
+
+    .item1 h3 {
+        font-size: 36px;
+    }
+
+    .item1 a {
+        font-size: 16px;
+    }
+
+    .ferrisWheel h2 {
+        font-size: 34px;
+    }
+
+    .ferrisWheel h2 span {
+        font-size: 74px;
+    }
+
+    .ferrisWheel a p {
+        width: 33px;
+        height: 33px;
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .ferrisWheel a h2:last-child {
+        font-size: 82px;
+    }
+
+    .girlBlue h2 {
+        font-size: 22px;
+    }
+
+    .girlBlue h2 span:nth-child(2) {
+        font-size: 42px;
+    }
+
+    .girlBlue h2 span:nth-child(4) {
+        font-size: 14px;
+    }
+
+    .girlPortrait h2 {
+        font-size: 34px;
+    }
+
+    .girlPortrait i {
+        font-size: 16px;
+    }
+
+    .leatherMan h2 {
+        font-size: 36px;
+    }
+
+    .leatherMan a button {
+        font-size: 12px;
+    }
+
+}
 
 /**************************/
 /*GIRLS CAROUSEL*/
